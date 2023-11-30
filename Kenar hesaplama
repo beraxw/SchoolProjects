@@ -1,0 +1,22 @@
+int main ()
+{
+
+int kkenar,ukenar, alan;
+
+printf("Uzun Kenarı giriniz:");
+scanf("%d",kkenar);
+
+
+printf("Kısa Kenarı giriniz:")
+scanf("%d",kkenar);
+
+alan = kkenar*ukenar;
+
+printf("Alan = %d",alan);
+
+
+
+
+
+return 0;
+}
