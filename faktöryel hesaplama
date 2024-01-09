@@ -1,0 +1,16 @@
+//faktöryel hesaplama
+
+#include <stdio.h>
+int main(int argc, const char * argv[]) {
+    int number,i,result;
+    
+    printf("İşlem yapılacak sayıyı giriniz.");
+    scanf("%d",&number);
+    
+    for (i=1; i<=number;i++) {
+        
+        result *= number;
+        printf("%d.Çarpan =%d\n\n",i,result);
+    }
+    printf("%d Sonuç",result);
+}
