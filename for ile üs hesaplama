@@ -1,0 +1,26 @@
+//
+//  main.c
+//  while
+//
+//  Created by Bera Öztürk on 10.01.2024.
+// üs hesaplama
+
+#include <stdio.h>
+#include <math.h>
+int main(int argc, const char * argv[]) {
+    int taban,üs,sonuç,i;
+    
+    printf("Tabanı giriniz.");
+    scanf("%d",&taban);
+    
+    printf("Üssü giriniz.");
+    scanf("%d",&üs);
+    
+    for (i=1;i<=üs;i++) {
+        sonuç*=taban;
+        printf("%d.sayı =%d\n",i,sonuç);
+        
+    }
+    
+    printf("sonuç %d",sonuç);
+}
