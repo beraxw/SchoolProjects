@@ -1,0 +1,22 @@
+//
+//  main.c
+//  while
+//
+//  Created by Bera Öztürk on 10.01.2024.
+//Girilen sayıyı; girilen başka bir sayiya bölünüp bölünemediğini kontrol etme
+
+#include <stdio.h>
+#include <math.h>
+int main(int argc, const char * argv[]) {
+    int sayi,bölüm;
+    printf("Bölünebilme kontrol, Bölünecek sayıyı giriniz.");
+    scanf("%d",&sayi);
+    printf("Hangi sayıya bölünecek?");
+    scanf("%d",&bölüm);
+    
+    if (sayi%bölüm==0)
+        printf("Sayi bölünür");
+    else
+        printf("sayi bölünmez");
+    
+}
