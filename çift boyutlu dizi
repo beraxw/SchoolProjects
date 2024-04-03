@@ -1,0 +1,41 @@
+//
+//  main.c
+//  making matris array with function
+//
+//  Created by Bera Öztürk on 3.04.2024.
+//
+
+#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    
+    int rows,columns;
+    printf("Enter the number of rows : \n");
+    scanf("%d",&rows);
+    printf("Enter the number of columns : \n");
+    scanf("%d",&columns);
+    
+    int i,j;
+    
+    int array [rows][columns];
+    
+    for (i=0;i<rows;i++) {
+        for (j=0;j<columns;j++) {
+            printf("dizi %d %d",i,j);
+            scanf("%d",&array[i][j]);
+        }
+
+    }
+    for (i=0;i<rows;i++) {
+        for (j=0;j<columns;j++) {
+            printf("%d \t\t",array[i][j]);
+        }
+        printf("\n");
+    }
+    
+    
+    
+    
+    return 0;
+}
+
