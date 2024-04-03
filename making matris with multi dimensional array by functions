@@ -1,0 +1,42 @@
+// Çift boyutlu dizilerde kullanıcıdan alınan değerler ile matris yapma
+//  main.c
+//  making matris array with function
+//
+//  Created by Bera Öztürk on 3.04.2024.
+//
+//bu projeyi şu an beceremedim tekrardan deneyeceğim. sabah 8.48 3 nisan çarşamba 2024
+//becerdim sabah 8.57 3 nisan çarşamba 2024
+
+#include <stdio.h>
+
+void print(int array[][100], int rows, int columns) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            printf("%d \t\t", array[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main(int argc, const char * argv[]) {
+    
+    int rows, columns;
+    printf("Enter the number of rows : \n");
+    scanf("%d", &rows);
+    printf("Enter the number of columns : \n");
+    scanf("%d", &columns);
+    
+    int array[100][100]; // Çözüm burada, sabit girilmesinin sebebi; c de functionlarda array tanımlarken i ve j gibi karakterler kabul etmemesi. Çözümü bu şekilde yapabiliriz.
+    
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            printf("dizi %d %d: ", i, j);
+            scanf("%d", &array[i][j]);
+        }
+    }
+    
+    print(array, rows, columns);
+    
+    return 0;
+}
+
