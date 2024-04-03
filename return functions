@@ -1,0 +1,26 @@
+//
+//  main.c
+//  Functions Return
+//
+//  Created by Bera Öztürk on 2.04.2024.
+//
+
+#include <stdio.h>
+int topla(int number1,int number2){
+    return (number1+number2);
+}
+
+int carp(int number1,int number2){
+    return (number1*number2);
+}
+
+
+int main(int argc, const char * argv[]) {
+    int number1, number2;
+    printf("Sayi giriniz \n");
+    scanf("%d%d",&number1,&number2);
+    
+    printf("%d",carp(number1,number2));
+
+    return 0;
+}
