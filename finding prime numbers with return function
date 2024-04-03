@@ -1,0 +1,37 @@
+//
+//  main.c
+//  finding prime numbers with return functions
+//
+//  Created by Bera Öztürk on 3.04.2024.
+//
+
+#include <stdio.h>
+
+int asal(int sayi){
+    int i;
+    
+    for (i=2;i<sayi;i++) {
+        if (sayi%i==0) {
+            return 0;
+    }
+            
+    }
+    return 1 ;
+}
+
+
+int main(int argc, const char * argv[]) {
+    int sayi;
+    
+    printf("Enter a number\n");
+    scanf("%d",&sayi);
+    
+    if (asal(sayi)==0) {
+        printf("sayi asal değildir");
+    }
+    else{
+        printf("sayi asal");
+    }
+    
+    return 0;
+}
