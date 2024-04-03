@@ -1,0 +1,30 @@
+//
+//  main.c
+//  factorial with functions
+//
+//  Created by Bera Öztürk on 2.04.2024.
+//
+
+#include <stdio.h>
+
+void facw(int number){
+    int fac=1;
+    int sayac;
+    for (sayac=0;sayac<number;sayac++) {
+        fac*=number;
+    }
+    printf("Now the program switched to the function\n");
+    printf("%d\n4",fac);
+}
+
+
+int main(int argc, const char * argv[]) {
+    printf("Faktöryelini almak istediğiniz sayıyı giriniz");
+    int number,fac=1;
+    scanf("%d",&number);
+   
+    printf("%d",fac);
+    
+    facw(number);
+    return 0;
+}
