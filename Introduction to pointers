@@ -1,0 +1,17 @@
+//
+//  main.c
+//  Introduction to Pointers
+//
+//  Created by Bera Öztürk on 3.04.2024.
+//
+
+#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    
+    int k=9;
+    int *s=&k;
+    printf("%p",s); //Harfli şekilde pointeri gösterir.
+    printf("\n%u",s); // Sayılarla pointeri gösterir.
+    printf("\n\n%u",*s); //* işareti adresteki değeri verir. eğer %p yaparsak 0xsayi olarak çıkar 
+}
