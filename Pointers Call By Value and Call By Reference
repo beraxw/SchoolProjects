@@ -1,0 +1,27 @@
+//
+//  main.c
+//  call by value and call by reference//
+//  Created by Bera Öztürk on 4.04.2024.
+//
+
+#include <stdio.h>
+
+int values(int *b, int *c){//2222Eğer pointer şeklide çağırmazsak değerler local olacağı için generalde değişkenler değişmez
+    int temp=0;
+    temp=*b;
+    *b=*c;
+    *c=temp;
+    
+    return 1;
+}
+
+int main(int argc, const char * argv[]) {
+    
+    int x=5,g=10;
+    
+    values(&x,&g);//11111 değerleri gnderirken && ile göndermemiz lazım ki, pointerlarda adres bilgisi olsun
+    printf("x = %d \ng = %d",x,g);
+    
+  
+    
+}
