@@ -1,0 +1,20 @@
+//
+//  main.c
+//  pointers basic example
+//
+//  Created by Bera Öztürk on 4.04.2024.
+//
+
+#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    int i,j=2;
+    int *p1,*p2=&j;
+    p1=p2;
+    
+    i =++(*p2);
+    *p2=*p1+i;
+    
+    printf("%d\n%d\n%d\n%d\n",i,j,*p1,*p2);
+    
+}
