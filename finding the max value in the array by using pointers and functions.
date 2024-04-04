@@ -1,0 +1,31 @@
+//
+//  main.c
+//  arrays and pointers
+//
+//  Created by Bera Öztürk on 4.04.2024.
+//
+
+#include <stdio.h>
+
+int max(int*a,int size){
+    int i,s;
+    s= a[0];
+    for (i=1;i<size;i++) {
+        if (a[i]>s){
+            s = a[i];
+        }
+    }
+    return s;
+}
+
+//*(p+1) = p [1]
+int main(int argc, const char * argv[]) {
+    
+    int a[5]={4,21,42,6,3};
+    int maks;
+    
+     maks = max(a,5);
+    printf("%d",maks);
+    
+}
+ 
