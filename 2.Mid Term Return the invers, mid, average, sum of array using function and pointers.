@@ -1,0 +1,64 @@
+//
+//  main.c
+//  Return the invers, mid, average, sum of array using function and pointers.
+//
+//  Created by Bera Öztürk on 4.04.2024.
+//
+
+#include <stdio.h>
+
+void inverseofarray(int *array,int n){
+    printf("The inverse of array is : \n");
+    for (int i=n-1;i>=0;i--) {
+        printf("%d",array[i]);
+    }
+    }
+
+void findMid(int *array, int n) {
+    int mid=0;
+    if (n%2==0) {
+        mid=n/2;
+        printf("%d",mid);
+    }
+    else{
+        printf("There is no mid");
+    }
+    
+    
+}
+float avarage(int *array,int n){
+    int sum = 0;
+    for (int i=0;i<n;i++) {
+        sum+=array[i];
+    }
+    int value=0;
+    value = sum/n;
+    return value;
+}
+
+int thesum(int *array, int n){
+    int sum=0,i;
+    for (i=0;i<n;i++) {
+        sum+=array[i];
+    }
+    return sum;
+}
+int main(int argc, const char * argv[]) {
+    int n;
+    printf("Enter the size of the array");
+    scanf("%d",&n);
+    int array [n],i;
+    for (i=0;i<n;i++) {
+        printf("Enter %d \t",i+1);
+        scanf("%d",&array[i]);
+    }
+    
+    inverseofarray(array,n);//dizinin tersi
+    findMid(array,n); //dizinin orta değeri
+    printf("\nThe avarage of array is %f",avarage(array,n));
+    printf("\n The Sum of array is %d",thesum(array,n));
+    
+    
+    
+    return 0;
+}
